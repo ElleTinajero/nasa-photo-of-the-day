@@ -6,7 +6,7 @@ import {
     CardTitle, CardSubtitle
   } from 'reactstrap';
   import { Container } from 'reactstrap';
-
+  
 
 function CardContainer() {
     const[data, setData] = useState({})
@@ -19,7 +19,7 @@ function CardContainer() {
 
     console.log(data)
     return (
-        <Container>
+        <Container className="wrapper">
             <Card>
                 <CardTitle>{data.title}</CardTitle>
                 <CardSubtitle id="date">{data.date}</CardSubtitle>
